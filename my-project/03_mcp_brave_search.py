@@ -9,7 +9,7 @@ os.environ["OPENAI_API_KEY"] = "YOUR-API-KEY"
 
 config = {
     "mcpServers": {
-        "fetch": {"url": "http://localhost:9090/fetch/sse"},
+        "fetch": {"url": "http://localhost:9090/brave-search/sse"},
     }
 }
 
@@ -34,7 +34,7 @@ def main():
     )
     return asyncio.run(
         chain.run(
-            "Use the following api pattern `https://api.lyrics.ovh/v1/Anne%20Marie/Birthday` to get the lyrics of the popular song 'Tum hi ho' by Arijit Singh",
+            "In which year was ISI Hyderabad established? What is the full form of ISI?\n",
         )
     )
 
