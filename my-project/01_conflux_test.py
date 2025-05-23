@@ -2,7 +2,7 @@ import asyncio
 import os
 
 from conflux import HandlerChain, Message, handler
-from conflux.handlers import GeminiLLM
+from conflux.handlers import OpenAiLLM
 
 # Get a gemini api key from https://aistudio.google.com/app/apikey
 os.environ["GOOGLE_API_KEY"] = "YOUR-API-KEY"
@@ -28,7 +28,7 @@ async def company_tagline_prompt(msg: Message, chain: HandlerChain) -> str:
 
 def main():
     name_and_tagline_generator = (
-        company_name_prompt >> GeminiLLM() >> company_tagline_prompt >> GeminiLLM()
+        company_name_prompt >> OpenAiLLM() >> company_tagline_prompt >> OpenAiLLM()
     )
 
     res = asyncio.run(name_and_tagline_generator("bike"))
