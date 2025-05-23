@@ -80,7 +80,7 @@ if __name__ == "__main__":
     main()
 ```
 
-**Note:** Replace `YOUR-API-KEY` with your real API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+**Note:** Replace `YOUR-API-KEY` with your real API key from OpenAI. You can get one by signing up at [OpenAI](https://openai.com/).
 
 ## 6. Run the Example
 
