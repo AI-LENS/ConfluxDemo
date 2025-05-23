@@ -51,7 +51,7 @@ import os
 from conflux import HandlerChain, Message, handler
 from conflux.handlers import OpenAiLLM
 
-# Get a Gemini API key from https://aistudio.google.com/app/apikey
+# Get a api key from openai.com
 os.environ["GOOGLE_API_KEY"] = "YOUR-API-KEY"
 
 @handler
