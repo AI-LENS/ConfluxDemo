@@ -67,7 +67,9 @@ chain = (
 
 res = asyncio.run(
     chain.run(
-        "What is the stock price of Shakti Pumps today?",
+        # "What is the stock price of Shakti Pumps today?",
+        # "Summarize yearly income statement of zomato for 2024-2025.\n"
+        "What are some latest news on Asian Paints?\n"
     )
 )
 print(res)
