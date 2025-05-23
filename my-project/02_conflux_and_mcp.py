@@ -4,7 +4,7 @@ from conflux import HandlerChain, Message, handler
 from conflux.handlers import McpToolCall, OpenAiLLM
 import os
 
-# Get a gemini api key from openai.com
+# Get a openai api key from openai.com
 os.environ["OPENAI_API_KEY"] = "YOUR-API-KEY"
 
 config = {
