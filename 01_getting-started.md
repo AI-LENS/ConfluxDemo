@@ -52,7 +52,7 @@ from conflux import HandlerChain, Message, handler
 from conflux.handlers import OpenAiLLM
 
 # Get a api key from openai.com
-os.environ["GOOGLE_API_KEY"] = "YOUR-API-KEY"
+os.environ["OPENAI_API_KEY"] = "YOUR-API-KEY"
 
 @handler
 async def company_name_prompt(msg: Message, chain: HandlerChain) -> str:
